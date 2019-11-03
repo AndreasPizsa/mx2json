@@ -8,6 +8,16 @@ Create a JSON representation of a Machinations Google Doc
 > 3. use 1 & 2 to create the API URL to your Google Doc, something like `https://sheets.googleapis.com/v4/spreadsheets/18J84rwqwC9AuyabZAK9d4JM6cUZn8jBnhZoT0NHMTp8/values/A%3AZ?key=…`
 4. `curl` this, optionally store the result in a file
 
+## Hosted Service
+
+A current version of this code can be called from
+
+`https://mx2json.now.sh/replace-with-your-google-doc-id`
+
+where, obviously, `replace-with-your-google-doc-id` is your Google Sheets document id.
+
+You will have to authenticate this either with an `Authorization` header, a `token` parameter in the request.
+
 ## CLI
 
 `mx2json` always reads from `stdin`. Use the pipe (`|`) or redirect (`<`) operators.
