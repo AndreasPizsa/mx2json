@@ -54,6 +54,7 @@
     "change-case": "^3.1.0",
     "get-stdin": "^7.0.0",
     "googleapis": "^44.0.0",
+    "got": "^9.6.0",
     "lodash.flatmap": "^4.5.0",
     "yargs": "^14.2.0"
   },

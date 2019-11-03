@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "alias": "mx2json",
+  "builds": [
+    {"src": "now-serverless.js", "use": "@now/node"}
+  ],
+  "routes": [
+    {"src": "/(.*?)", "dest": "now-serverless.js" }
+  ]
+}
+ 
