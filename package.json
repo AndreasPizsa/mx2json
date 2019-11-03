@@ -5,7 +5,7 @@
   "version": "0.0.0-development",
   "main": "api.js",
   "bin": {
-    "mx2json": "./cli.js"
+    "mx2json": "cli.js"
   },
   "author": {
     "email": "hopster@gmail.com",
@@ -44,20 +44,20 @@
     "codecov": "^3.6.1",
     "finepack": "^2.9.1",
     "husky": "^3.0.9",
+    "is-ci": "^2.0.0",
     "nyc": "^14.1.1",
     "semantic-release": "^15.13.30",
     "xo": "^0.25.3"
   },
   "files": [
-    "./cli.js"
+    "cli.js"
   ],
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
     "pretest": "xo",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "semantic-release": "semantic-release",
-    "test": "nyc ava && npm run report-coverage",
-    "prepublish": "finepack"
+    "test": "nyc ava && is-ci && npm run report-coverage || true"
   },
   "license": "MIT",
   "commitlint": {
@@ -78,6 +78,9 @@
       "@andreaspizsa/eslint-config-xo"
     ],
     "semicolon": false,
-    "space": true
+    "space": true,
+    "settings": {
+      "node/no-unpublished-bin": 0
+    }
   }
 }
