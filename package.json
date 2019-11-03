@@ -1,25 +1,40 @@
 {
   "name": "mx2json",
-  "version": "0.0.0-development",
   "description": "",
+  "homepage": "https://github.com/AndreasPizsa/mx2json#readme",
+  "version": "0.0.0-development",
   "main": "api.js",
   "bin": {
     "mx2json": "./cli.js"
   },
-  "scripts": {
-    "test": "nyc ava && npm run report-coverage",
-    "pretest": "xo",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "semantic-release": "semantic-release",
-    "preinstall": "npx npm-force-resolutions"
-  },
-  "keywords": [],
   "author": {
-    "name": "Andreas Pizsa",
     "email": "hopster@gmail.com",
+    "name": "Andreas Pizsa",
     "url": "https://github.com/AndreasPizsa"
   },
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndreasPizsa/mx2json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndreasPizsa/mx2json/issues"
+  },
+  "keywords": [
+    "convert",
+    "game design",
+    "json",
+    "machinations",
+    "model",
+    "uml"
+  ],
+  "dependencies": {
+    "change-case": "^3.1.0",
+    "get-stdin": "^7.0.0",
+    "googleapis": "^44.0.0",
+    "got": "^9.6.0",
+    "lodash.flatmap": "^4.5.0",
+    "yargs": "^14.2.0"
+  },
   "devDependencies": {
     "@andreaspizsa/eslint-config-xo": "^0.1.2",
     "@commitlint/cli": "^8.2.0",
@@ -33,13 +48,18 @@
     "semantic-release": "^15.13.30",
     "xo": "^0.25.3"
   },
-  "xo": {
-    "semicolon": false,
-    "space": true,
-    "extends": [
-      "@andreaspizsa/eslint-config-xo"
-    ]
+  "files": [
+    "./cli.js"
+  ],
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "pretest": "xo",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "semantic-release": "semantic-release",
+    "test": "nyc ava && npm run report-coverage",
+    "prepublish": "finepack"
   },
+  "license": "MIT",
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -50,19 +70,14 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "dependencies": {
-    "change-case": "^3.1.0",
-    "get-stdin": "^7.0.0",
-    "googleapis": "^44.0.0",
-    "got": "^9.6.0",
-    "lodash.flatmap": "^4.5.0",
-    "yargs": "^14.2.0"
-  },
   "resolutions": {
     "https-proxy-agent": ">=2.2.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AndreasPizsa/mx2json.git"
+  "xo": {
+    "extends": [
+      "@andreaspizsa/eslint-config-xo"
+    ],
+    "semicolon": false,
+    "space": true
   }
 }
