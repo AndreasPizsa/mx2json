@@ -5,7 +5,7 @@
   "version": "0.0.0-development",
   "main": "api.js",
   "bin": {
-    "mx2json": "./cli.js"
+    "mx2json": "cli.js"
   },
   "author": {
     "email": "hopster@gmail.com",
@@ -50,7 +50,7 @@
     "xo": "^0.25.3"
   },
   "files": [
-    "./cli.js"
+    "cli.js"
   ],
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
@@ -78,6 +78,9 @@
       "@andreaspizsa/eslint-config-xo"
     ],
     "semicolon": false,
-    "space": true
+    "space": true,
+    "settings": {
+      "node/no-unpublished-bin": 0
+    }
   }
 }
