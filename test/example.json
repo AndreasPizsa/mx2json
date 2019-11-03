@@ -1,0 +1,183 @@
+{
+  "range": "'10/31/2019'!A1:Z1000",
+  "majorDimension": "ROWS",
+  "values": [
+    [],
+    [
+      "DIAGRAM PROPERTIES"
+    ],
+    [
+      "",
+      "Name:",
+      "Untitled"
+    ],
+    [
+      "",
+      "URL:",
+      "https://my.machinations.io/diagram/22179"
+    ],
+    [
+      "",
+      "Owner:",
+      "Andreas Pizsa"
+    ],
+    [
+      "",
+      "Creation Date:",
+      "10/22/2019"
+    ],
+    [
+      "",
+      "Last Change:",
+      "10/31/2019"
+    ],
+    [
+      "",
+      "Time Interval:",
+      "1"
+    ],
+    [
+      "",
+      "Time Steps Limit:",
+      "100"
+    ],
+    [
+      "",
+      "Number of Runs (batch):",
+      "10"
+    ],
+    [
+      "",
+      "Number of Runs (total):",
+      "20"
+    ],
+    [],
+    [
+      "GLOBAL VARIABLES"
+    ],
+    [
+      "ID",
+      "Name",
+      "Value"
+    ],
+    [
+      "1",
+      "Dice",
+      "D6"
+    ],
+    [
+      "2",
+      "Skill"
+    ],
+    [
+      "3",
+      "Multiplayer"
+    ],
+    [
+      "4",
+      "Strategy"
+    ],
+    [],
+    [
+      "POOLS"
+    ],
+    [
+      "ID",
+      "Label",
+      "Geometry",
+      "Style",
+      "Activation",
+      "Activation Mode",
+      "Resources",
+      "Resources (color)",
+      "Capacity (limit)",
+      "Capacity (display)",
+      "Overflow",
+      "Show in chart"
+    ],
+    [
+      "11",
+      "",
+      "{\"_attributes\":{\"x\":\"360\",\"y\":\"110\",\"width\":\"60\",\"height\":\"60\",\"TRANSLATE_CONTROL_POINTS\":\"1\",\"relative\":\"0\",\"as\":\"geometry\"},\"mxPoint\":{\"_attributes\":{\"x\":\"0\",\"y\":\"40\",\"as\":\"offset\"}}}",
+      "shape=pool-shape;whiteSpace=wrap;html=1;strokeWidth=2;aspect=fixed;resizable=0;fontSize=16;fontColor=#000000;strokeColor=#000000;",
+      "passive",
+      "pull-any",
+      "10",
+      "Black",
+      "-1",
+      "25",
+      "block",
+      "0"
+    ],
+    [
+      "15",
+      "",
+      "{\"_attributes\":{\"x\":\"150\",\"y\":\"110\",\"width\":\"60\",\"height\":\"60\",\"TRANSLATE_CONTROL_POINTS\":\"1\",\"relative\":\"0\",\"as\":\"geometry\"},\"mxPoint\":{\"_attributes\":{\"x\":\"0\",\"y\":\"40\",\"as\":\"offset\"}}}",
+      "shape=pool-shape;whiteSpace=wrap;html=1;strokeWidth=2;aspect=fixed;resizable=0;fontSize=16;fontColor=#000000;strokeColor=#000000;",
+      "interactive",
+      "push-any",
+      "5",
+      "Black",
+      "-1",
+      "25",
+      "block",
+      "0"
+    ],
+    [],
+    [
+      "RESOURCE CONNECTIONS"
+    ],
+    [
+      "ID",
+      "Label",
+      "Geometry",
+      "Style",
+      "Source",
+      "Target",
+      "Transfer",
+      "Color Coding",
+      "Color Coding (color)",
+      "Shuffle Source",
+      "Limits (minimum)",
+      "Limits (maximum)"
+    ],
+    [
+      "14",
+      "1",
+      "{\"_attributes\":{\"x\":\"0\",\"y\":\"0\",\"width\":\"60\",\"height\":\"60\",\"relative\":\"1\",\"TRANSLATE_CONTROL_POINTS\":\"1\",\"as\":\"geometry\"},\"mxPoint\":[{\"_attributes\":{\"x\":\"240\",\"y\":\"148.33333333333337\",\"as\":\"sourcePoint\"}},{\"_attributes\":{\"x\":\"324.8528137423857\",\"y\":\"150\",\"as\":\"targetPoint\"}},{\"_attributes\":{\"x\":\"20\",\"y\":\"10\",\"as\":\"offset\"}}]}",
+      "shape=resource-connection;endArrow=classic;html=1;strokeWidth=2;fontSize=16;fontColor=#000000;strokeColor=#000000;",
+      "15",
+      "11",
+      "interval-based",
+      "0",
+      "Orange",
+      "0",
+      "-9999",
+      "9999"
+    ],
+    [],
+    [
+      "STATE CONNECTIONS"
+    ],
+    [
+      "ID",
+      "Label",
+      "Geometry",
+      "Style",
+      "Source",
+      "Target",
+      "Color Coding",
+      "Color Coding (color)"
+    ],
+    [
+      "16",
+      "\u003e0",
+      "{\"_attributes\":{\"x\":\"0\",\"y\":\"0\",\"width\":\"60\",\"height\":\"60\",\"relative\":\"1\",\"TRANSLATE_CONTROL_POINTS\":\"1\",\"as\":\"geometry\"},\"mxPoint\":[{\"_attributes\":{\"x\":\"420\",\"y\":\"200\",\"as\":\"sourcePoint\"}},{\"_attributes\":{\"x\":\"504.8528137423857\",\"y\":\"140\",\"as\":\"targetPoint\"}},{\"_attributes\":{\"x\":\"20\",\"y\":\"10\",\"as\":\"offset\"}}],\"Array\":{\"_attributes\":{\"as\":\"points\"},\"mxPoint\":{\"_attributes\":{\"x\":\"350\",\"y\":\"290\"}}}}",
+      "shape=state-connection;endArrow=classic;dashed=1;dashPattern=4 3;html=1;strokeWidth=2;fontSize=16;fontColor=#000000;strokeColor=#000000;",
+      "11",
+      "14",
+      "0",
+      "Black"
+    ]
+  ]
+}

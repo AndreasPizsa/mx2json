@@ -1,0 +1,36 @@
+{
+  "title": "Machinations Model",
+  "type": "object",
+  "properties": {
+    "diagramProperties": {
+      "$ref": "#/definitions/DiagramProperties"
+    },
+    "globalVariables": {
+      "$ref": "#/definitions/GlobalVariable"
+    }
+  },
+  "definitions": {
+    "DiagramProperties": {
+      "type": "object",
+      "properties": {
+        "name":               { "type": "string"},
+        "url":                { "type": "string"},
+        "owner":              { "type": "string"},
+        "creationDate":       { "type": "string"},
+        "lastChange":         { "type": "string"},
+        "timeInterval":       { "type": "number"},
+        "timeStepsLimit":     { "type": "number"},
+        "numberOfRunsBatch":  { "type": "number"},
+        "numberOfRunsTotal":  { "type": "number"}
+      }
+    },
+    "GlobalVariable": {
+      "type": "object",
+      "properties": {
+        "id":     { "type": "number"},
+        "name":   { "type": "string"},
+        "value":  { "type": "string"}
+      }
+    }
+  }
+}
